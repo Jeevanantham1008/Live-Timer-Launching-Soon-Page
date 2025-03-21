@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./images/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 0 8%;
+}
+.logo {
+  width: 200px;
+  padding: 10px 0px;
+  cursor: pointer;
+}
+.content {
+  top: 40%;
+  bottom: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  color: white;
+}
+.content h1 {
+  font-size: 64px;
+  font-weight: 500;
+}
+.content h1 span {
+  color: greenyellow;
+}
+.content button {
+  background: transparent;
+  border: 2px solid white;
+  outline: none;
+  padding: 12px 25px;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.content button img {
+  width: 15px;
+  margin-left: 10px;
+}
+/* .content button :hover{
+    width: 20px; 
+}*/
+.launch-time {
+  display: flex;
+}
+.launch-time div {
+  flex-basis: 100px;
+}
+.launch-time div p {
+  font-size: 50px;
+  margin-bottom: -14px;
+}
+.launch-time div span {
+  color: black;
+}
+.f1 {
+  width: 250px;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  animation: f1 5s reverse infinite;
+}
+@keyframes f1 {
+  100% {
+    bottom: 0;
+    opacity: 1;
+  }
+  100% {
+    bottom: 105%;
+    opacity: 0;
+  }
+}
+/* Mobile phone screens */
+@media screen and (max-width: 768px) {
+  .f1 {
+    width: 150px; 
+    right: 5%; 
+  }
+}
+/* Mid size screens */
+@media screen and (max-width: 1024px) {
+  .f1 {
+    width: 200px;
+    right: 7%;
+  }
+}
+/* Desktop screens */
+@media screen and (min-width: 1025px) {
+  .f1 {
+    width: 250px;
+    right: 10%;
+  }
+}
